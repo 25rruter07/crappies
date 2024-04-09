@@ -42,14 +42,14 @@ for i in range(len(all_honey)):
   state = all_states[i]
   # the keys in the honey data structure are the years
   years = honey.keys()
-  if sum(honey) < small_vol:
+  '''if sum(honey) < small_vol:
     plt.plot(honey.keys(), honey, label=state, marker="o")
     plt.plot(honey.keys(), honey, label=state)
 plt.xlabel('Year')
 plt.ylabel('Production levels')
 plt.title('LOW HONEY PRODUCERS')
 plt.legend()
-plt.show()
+plt.show()'''
 
 for i in range(len(all_honey)):
   # get the state and its honey values
@@ -57,14 +57,14 @@ for i in range(len(all_honey)):
   state = all_states[i]
   # the keys in the honey data structure are the years
   years = honey.keys()
-  if sum(honey) <= mid_vol and sum(honey) >= small_vol:
+  '''if sum(honey) <= mid_vol and sum(honey) >= small_vol:
     plt.plot(honey.keys(), honey, label=state, marker="o")
     plt.plot(honey.keys(), honey, label=state)
 plt.xlabel('Year')
 plt.ylabel('Production levels')
 plt.title('MID-LEVEL HONEY PRODUCERS')
 plt.legend()
-plt.show()
+plt.show()'''
 
 for i in range(len(all_honey)):
   # get the state and its honey values
@@ -72,14 +72,14 @@ for i in range(len(all_honey)):
   state = all_states[i]
   # the keys in the honey data structure are the years
   years = honey.keys()
-  if sum(honey) > mid_vol:
+'''if sum(honey) > mid_vol:
     plt.plot(honey.keys(), honey, label=state, marker="o")
     plt.plot(honey.keys(), honey, label=state)
 plt.xlabel('Year')
 plt.ylabel('Production levels')
 plt.title('LARGE HONEY PRODUCERS')
 plt.legend()
-plt.show()
+plt.show()'''
 
 for state in unique_states:
   honey_data = df[df['State'] == state].groupby('Year')['Value']
