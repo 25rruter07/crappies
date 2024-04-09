@@ -8,11 +8,8 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 
-mid_vol = 5e6
-small_vol = 7.5e5
-
 # Load in the data with read_csv()
-df = pd.read_csv("honey.csv", header=0)
+df = pd.read_csv("crappie.csv", header=0)
 
 # data cleansing
 #print(df['Value'])
